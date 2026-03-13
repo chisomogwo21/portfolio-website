@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Projects | ELYON Architecture</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .filter-controls {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 50px;
+            justify-content: center;
+            overflow-x: auto;
+            padding: 10px 0;
+        }
+
+        .filter-btn {
+            padding: 10px 25px;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: 1px solid var(--border-light);
+            background: none;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            white-space: nowrap;
+        }
+
+        .filter-btn.active,
+        .filter-btn:hover {
+            background: var(--primary-black);
+            color: var(--primary-white);
+            border-color: var(--primary-black);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">ELYON</a>
+
+            <button class="mobile-toggle">
+                <i data-lucide="menu"></i>
+            </button>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="navbar-actions">
+                <a href="contact.html" class="btn-primary">Start a Project</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <header class="page-header">
+            <div class="container">
+                <h1 class="page-title">Our Projects</h1>
+                <p class="page-subtitle">Explore our portfolio of exceptional architectural projects spanning
+                    residential, commercial, and interior design.</p>
+            </div>
+        </header>
+
+        <section class="portfolio section">
+            <div class="container">
+                <div class="filter-controls">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="residential">Residential</button>
+                    <button class="filter-btn" data-filter="commercial">Commercial</button>
+                    <button class="filter-btn" data-filter="urban">Urban Design</button>
+                </div>
+
+                <div class="featured-grid" id="projects-grid">
+                    <div class="featured-card project-card" data-category="residential">
+                        <a href="projects/subira-residence.html">
+                            <div class="card-image"><img src="assets/living room interior .png" alt="Minimal Villa">
+                            </div>
+                            <h3>Two Bedroom Apartment</h3>
+                            <p>Subira Residence</p>
+                        </a>
+                    </div>
+                    <div class="featured-card project-card" data-category="commercial">
+                        <a href="projects/three-bedroom-apartment.html">
+                            <div class="card-image"><img src="assets/Three bedroom interior.png"
+                                    alt="Three Bedroom Apartment"></div>
+                            <h3>Three Bedroom Apartment</h3>
+                            <p>Subira Residence</p>
+                        </a>
+                    </div>
+                    <div class="featured-card project-card" data-category="residential">
+                        <a href="projects/penthouse-apartment.html">
+                            <div class="card-image"><img src="assets/penthouse apartment.png" alt="penthouse apartment">
+                            </div>
+                            <h3>penthouse apartment</h3>
+                            <p>subira residence</p>
+                        </a>
+                    </div>
+                    <div class="featured-card project-card" data-category="urban">
+                        <a href="projects/villa.html">
+                            <div class="card-image"><img src="assets/villa .png" alt="villa"></div>
+                            <h3>villa</h3>
+                            <p>Togo</p>
+                        </a>
+                    </div>
+                    <div class="featured-card project-card" data-category="commercial">
+                        <a href="projects/penthouse.html">
+                            <div class="card-image"><img src="assets/penthous L2.png" alt="penthous L2"></div>
+                            <h3>penthouse</h3>
+                            <p>Kigali — 2024</p>
+                        </a>
+                    </div>
+                    <div class="featured-card project-card" data-category="residential">
+                        <a href="projects/light-apartment.html">
+                            <div class="card-image"><img src="/assets/Light apartment.png" alt=""></div>
+                            <h3>Light apartment</h3>
+                            <p>N’Djamena, Chad.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta section centered bg-light">
+            <div class="container">
+                <h2 class="section-title">Have a Project in Mind?</h2>
+                <p class="cta-text">Let's collaborate to create something truly exceptional that reflects your vision
+                    and our legacy.</p>
+                <div class="hero-btns">
+                    <a href="contact.html" class="btn-black">Start Project</a>
+                    <a href="about.html" class="btn-outline-dark">Read Studio Story</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3 class="footer-logo">ELYON</h3>
+                    <p class="footer-tagline">ELYON is a collective of architects and specialists focusing on bringing
+                        innovative architectural ideas and development expertise.</p>
+                </div>
+                <div class="footer-links">
+                    <h4 class="footer-title">Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4 class="footer-title">Contact</h4>
+                    <p>madjilemr@gmail.com </p>
+                    <p>+250 732318876 </p>
+                    <p>Kigali, Rwanda</p>
+                </div>
+                <div class="footer-social">
+                    <h4 class="footer-title">Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i data-lucide="instagram"></i></a>
+                        <a href="#"><i data-lucide="linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ELYON Architecture. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/projects.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

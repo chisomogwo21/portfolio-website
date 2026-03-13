@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | ELYON Architecture</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 100px;
+            margin-top: 80px;
+            align-items: start;
+        }
+
+        .contact-form {
+            background: #F8F8F8;
+            padding: 60px;
+            border-radius: 4px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-secondary);
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #EEEEEE;
+            background: white;
+            font-family: inherit;
+            font-size: 14px;
+            transition: var(--transition-smooth);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent-gold);
+        }
+
+        .contact-info-item {
+            margin-bottom: 45px;
+        }
+
+        .contact-info-item h4 {
+            font-size: 14px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--primary-black);
+        }
+
+        .contact-info-item p {
+            color: var(--text-secondary);
+            font-size: 15px;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 992px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 60px;
+            }
+
+            .contact-form {
+                padding: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">ELYON</a>
+
+            <button class="mobile-toggle">
+                <i data-lucide="menu"></i>
+            </button>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+
+            <div class="navbar-actions">
+                <a href="contact.html" class="btn-primary">Start a Project</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <header class="page-header">
+            <div class="container">
+                <h1 class="page-title">Let's Create Together</h1>
+                <p class="page-subtitle">Ready to start your next architectural journey? We'd love to hear from you and
+                    explore how we can bring your vision to life.</p>
+            </div>
+        </header>
+
+        <section class="section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-sidebar">
+                        <h2 class="section-title" style="font-size: 32px; margin-bottom: 40px; text-align: left;">
+                            Contact Information</h2>
+
+                        <div class="contact-info-list">
+                            <div class="contact-info-card">
+                                <div class="icon-box-beige"><i data-lucide="phone"></i></div>
+                                <div class="info-text">
+                                    <h4>Phone</h4>
+                                    <p>+250 732318876</p>
+                                    <p>+250 794093904</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-card">
+                                <div class="icon-box-beige"><i data-lucide="mail"></i></div>
+                                <div class="info-text">
+                                    <h4>Email</h4>
+                                    <p>madjilemr@gmail.com</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-card">
+                                <div class="icon-box-beige"><i data-lucide="map-pin"></i></div>
+                                <div class="info-text">
+                                    <h4>Office Location</h4>
+                                    <p>Kiyovu</p>
+                                    <p>Kigali District</p>
+                                    <p>Rwanda</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-card">
+                                <div class="icon-box-beige"><i data-lucide="clock"></i></div>
+                                <div class="info-text">
+                                    <h4>Office Hours</h4>
+                                    <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                                    <p>Saturday: 10:00 AM - 2:00 PM</p>
+                                    <p>Sunday: Closed</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-image-box" style="margin-top: 60px;">
+                            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200"
+                                alt="Office Space" style="width: 100%; border-radius: 4px;">
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <form action="#">
+                            <div class="form-group">
+                                <label>Full Name</label>
+                                <input type="text" placeholder="Your Name">
+                            </div>
+                            <div class="form-group">
+                                <label>Email Address</label>
+                                <input type="email" placeholder="email@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label>Project Interest</label>
+                                <select>
+                                    <option>Residential Architecture</option>
+                                    <option>Commercial Design</option>
+                                    <option>Interior Architecture</option>
+                                    <option>Urban Planning</option>
+                                    <option>3D Visualization</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Your Message</label>
+                                <textarea rows="6" placeholder="Tell us about your project vision..."></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary" style="width: 100%;">Send Inquiry</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3 class="footer-logo">ELYON</h3>
+                    <p class="footer-tagline">ELYON is a collective of architects and specialists focusing on bringing
+                        innovative architectural ideas and development expertise.</p>
+                </div>
+                <div class="footer-links">
+                    <h4 class="footer-title">Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4 class="footer-title">Contact</h4>
+                    <p>madjilemr@gmail.com</p>
+                    <p>+250 732318876</p>
+                    <p>Kigali, Rwanda</p>
+                </div>
+                <div class="footer-social">
+                    <h4 class="footer-title">Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i data-lucide="instagram"></i></a>
+                        <a href="#"><i data-lucide="linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ELYON Architecture. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
