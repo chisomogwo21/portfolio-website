@@ -948,7 +948,12 @@ img {
 
 @media (max-width: 576px) {
     .hero-content h1 {
-        font-size: 42px;
+        font-size: 36px;
+        line-height: 1.2;
+    }
+
+    .section {
+        padding: 50px 5%;
     }
 
     .services-grid {
@@ -961,12 +966,26 @@ img {
 
     .hero-btns {
         flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn-filled,
+    .btn-outline,
+    .btn-outline-dark,
+    .btn-black {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
     }
 }
 
 @media (max-width: 480px) {
     .hero-content h1 {
-        font-size: 38px;
+        font-size: 32px;
+    }
+
+    .section-title {
+        font-size: 28px;
     }
 
     .hero-btns {
@@ -974,10 +993,9 @@ img {
         width: 100%;
     }
 
-    .btn-filled,
-    .btn-outline {
-        width: 100%;
-        text-align: center;
+    .project-meta-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
     }
 }
 
