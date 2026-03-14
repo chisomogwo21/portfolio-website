@@ -940,10 +940,27 @@ img {
         grid-template-columns: 1fr;
     }
 
-    /* .contact-grid { grid-template-columns: 1fr; gap: 50px; } */
-    /* This was commented out in the original, keeping it commented */
-    /* .project-meta-grid { grid-template-columns: 1fr 1fr; gap: 20px; } */
-    /* This was commented out in the original, keeping it commented */
+    /* About Page Mobile Stacking */
+    .biography-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .philosophy-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 60px 0;
+    }
+
+    .stats-number {
+        font-size: 72px;
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 576px) {
